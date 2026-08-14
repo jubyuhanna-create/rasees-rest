@@ -77,6 +77,15 @@ section{ padding:90px 6vw; }
 .nav-cta:hover{ background:#A47A28; }
 @media(max-width:860px){ .nav-links{display:none;} }
 
+.lang-switch{ display:flex; align-items:center; gap:2px; background:var(--cream-deep); border-radius:20px; padding:3px; }
+.lang-switch button{
+  font-family:var(--body); font-size:12px; font-weight:700; border:none; background:transparent;
+  color:var(--brown-soft); padding:6px 13px; border-radius:16px; cursor:pointer; transition:background .2s ease, color .2s ease;
+}
+.lang-switch button.active{ background:var(--paper); color:var(--brown); box-shadow:0 2px 6px rgba(46,33,23,0.12); }
+.lang-switch button:hover:not(.active){ color:var(--brown); }
+@media(max-width:600px){ .lang-switch{ display:none; } }
+
 /* ===== hero (photo hero used on home / terrace) ===== */
 .photo-hero{
   position:relative; min-height:78vh; display:flex; align-items:flex-end;
