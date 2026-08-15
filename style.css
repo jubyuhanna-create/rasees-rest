@@ -4,13 +4,17 @@
   --paper:#FDFBF6;
   --brown:#2E2117;
   --brown-soft:#5A4A3A;
-  --gold:#B8892F;
-  --gold-bright:#D2A94A;
+  --gold:#3E8B95;
+  --gold-bright:#7FD1D6;
   --plaid-red:#7E2B22;
   --plaid-black:#221812;
   --line:rgba(46,33,23,0.14);
   --display:'Markazi Text', serif;
   --body:'Cairo', sans-serif;
+}
+html[lang="he"]{
+  --display:'Frank Ruhl Libre', serif;
+  --body:'Heebo', sans-serif;
 }
 *{box-sizing:border-box;margin:0;padding:0;}
 html{scroll-behavior:smooth;}
@@ -74,8 +78,25 @@ section{ padding:90px 6vw; }
 .nav-links a{ font-size:13.5px; font-weight:600; text-decoration:none; color:var(--brown-soft); transition:color .2s ease; padding-bottom:3px; border-bottom:2px solid transparent; }
 .nav-links a:hover, .nav-links a.active{ color:var(--brown); border-color:var(--gold); }
 .nav-cta{ font-size:13px; font-weight:700; background:var(--gold); color:var(--paper); padding:9px 20px; border-radius:6px; text-decoration:none; white-space:nowrap; }
-.nav-cta:hover{ background:#A47A28; }
+.nav-cta:hover{ background:#2F6E77; }
 @media(max-width:860px){ .nav-links{display:none;} }
+
+.nav-toggle{
+  display:none; flex-direction:column; gap:5px; background:none; border:none; cursor:pointer; padding:6px;
+}
+.nav-toggle span{ width:22px; height:2px; background:var(--brown); border-radius:2px; }
+@media(max-width:860px){
+  .nav-toggle{ display:flex; }
+  .nav-links{
+    display:none; position:absolute; top:100%; inset-inline:0; background:var(--paper);
+    flex-direction:column; align-items:center; gap:0; padding:8px 0; border-bottom:2px solid var(--gold);
+    box-shadow:0 12px 24px rgba(46,33,23,0.12);
+  }
+  .nav-links.open{ display:flex; }
+  .nav-links li{ width:100%; text-align:center; }
+  .nav-links a{ display:block; padding:14px 20px; border-bottom:1px solid var(--line); }
+  .nav-links a.active, .nav-links a:hover{ border-bottom:1px solid var(--line); background:var(--cream); }
+}
 
 .lang-switch{ display:flex; align-items:center; gap:2px; background:var(--cream-deep); border-radius:20px; padding:3px; }
 .lang-switch button{
