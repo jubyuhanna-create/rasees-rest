@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>رسيس · مطعم ومقهى في قلب الناصرة القديمة</title>
+<title data-i18n="meta_title_home">رسيس · مطعم ومقهى في قلب الناصرة القديمة</title>
 <meta name="description" content="رسيس - مطعم ومقهى داخل مبنى تاريخي في قلب الناصرة القديمة" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Markazi+Text:wght@500;600;700&family=Cairo:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Markazi+Text:wght@500;600;700&family=Cairo:wght@300;400;500;600;700;800&family=Frank+Ruhl+Libre:wght@500;600;700&family=Heebo:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -15,70 +15,71 @@
 <nav class="nav">
   <img class="nav-logo" src="assets/logo.png" alt="رسيس" />
   <ul class="nav-links">
-    <li><a href="index.html" class="active">الرئيسية</a></li>
-    <li><a href="menu.html">القائمة</a></li>
-    <li><a href="terrace.html">الجلسة الخارجية</a></li>
-    <li><a href="index.html#reviews">آراء الزوار</a></li>
-    <li><a href="contact.html">تواصل معنا</a></li>
+    <li><a href="index.html" class="active" data-i18n="nav_home">الرئيسية</a></li>
+    <li><a href="menu.html" data-i18n="nav_menu">القائمة</a></li>
+    <li><a href="terrace.html" data-i18n="nav_terrace">الجلسة الخارجية</a></li>
+    <li><a href="index.html#reviews" data-i18n="nav_reviews">آراء الزوار</a></li>
+    <li><a href="contact.html" data-i18n="nav_contact">تواصل معنا</a></li>
   </ul>
+  <button class="nav-toggle" type="button" aria-label="فتح القائمة"><span></span><span></span><span></span></button>
   <div style="display:flex; align-items:center; gap:14px;">
     <div class="lang-switch">
-      <button class="active" type="button">ع</button>
-      <button type="button">עב</button>
-      <button type="button">EN</button>
+      <button class="active" type="button" data-lang="ar">ع</button>
+      <button type="button" data-lang="he">עב</button>
+      <button type="button" data-lang="en">EN</button>
     </div>
-    <a class="nav-cta" href="https://rasis.auratech1.tech/menu-list" target="_blank" rel="noopener">القائمة</a>
+    <a class="nav-cta" href="https://rasis.auratech1.tech/menu-list" target="_blank" rel="noopener" data-i18n="nav_cta">القائمة</a>
   </div>
 </nav>
 
 <!-- HERO -->
 <header class="photo-hero" style="background-image:url('assets/terrace-hero.jpg');">
   <div class="photo-hero-inner">
-    <span class="eyebrow">رسيس · الناصرة</span>
-    <h1>مطعم ومقهى رسيس:<br/>أصالة المذاق، سحر الإطلالة</h1>
-    <p>داخل مبنى تاريخي في قلب الناصرة القديمة، حيث يلتقي التقليد بالأصالة</p>
-    <a class="btn btn-gold" href="https://rasis.auratech1.tech/menu-list" target="_blank" rel="noopener">اكتشف القائمة الآن</a>
+    <span class="eyebrow" data-i18n="hero_eyebrow">رسيس · الناصرة</span>
+    <h1 data-i18n="hero_title">مطعم ومقهى رسيس:<br/>أصالة المذاق، سحر الإطلالة</h1>
+    <p data-i18n="hero_sub">داخل مبنى تاريخي في قلب الناصرة القديمة، حيث يلتقي التقليد بالأصالة</p>
+    <a class="btn btn-gold" href="https://rasis.auratech1.tech/menu-list" target="_blank" rel="noopener" data-i18n="hero_btn">اكتشف القائمة الآن</a>
   </div>
 </header>
 
 <!-- DISHES -->
 <section class="dishes">
   <div class="sec-head">
-    <span class="eyebrow">أطباقنا</span>
-    <h2 class="sec-title">أطباق مميزة</h2>
-    <p class="sec-sub">مذاق أصيل بلمسة عصرية</p>
+    <span class="eyebrow" data-i18n="dishes_eyebrow">أطباقنا</span>
+    <h2 class="sec-title" data-i18n="dishes_title">أطباق مميزة</h2>
+    <p class="sec-sub" data-i18n="dishes_sub">مذاق أصيل بلمسة عصرية</p>
   </div>
   <div class="dish-grid">
     <div class="dish-card">
       <div class="dish-photo"><img src="assets/dish-mansaf.jpg" alt="طبق المنسف الأصيل" /></div>
       <div class="plaid"></div>
-      <div class="dish-info"><h3>طبق المنسف الأصيل</h3><p>لحم طري على أرز باللبن ومكسرات محمصة</p></div>
+      <div class="dish-info"><h3 data-i18n="dish1_name">طبق المنسف الأصيل</h3><p data-i18n="dish1_desc">لحم طري على أرز باللبن ومكسرات محمصة</p></div>
     </div>
     <div class="dish-card">
-      <div class="dish-photo ph"><span class="ph-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10.5" r="1.5"/><path d="M21 15l-5-5-4 4-3-3-6 6"/></svg></span><span class="ph-text">صورة الطبق قريباً</span></div>
+      <div class="dish-photo ph"><span class="ph-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10.5" r="1.5"/><path d="M21 15l-5-5-4 4-3-3-6 6"/></svg></span><span class="ph-text" data-i18n="dish_ph_soon">صورة الطبق قريباً</span></div>
       <div class="plaid"></div>
-      <div class="dish-info"><h3>طبق مميز</h3><p>بانتظار الصورة والوصف</p></div>
+      <div class="dish-info"><h3 data-i18n="dish_ph_name">طبق مميز</h3><p data-i18n="dish_ph_desc">بانتظار الصورة والوصف</p></div>
     </div>
     <div class="dish-card">
-      <div class="dish-photo ph"><span class="ph-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10.5" r="1.5"/><path d="M21 15l-5-5-4 4-3-3-6 6"/></svg></span><span class="ph-text">صورة الطبق قريباً</span></div>
+      <div class="dish-photo ph"><span class="ph-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10.5" r="1.5"/><path d="M21 15l-5-5-4 4-3-3-6 6"/></svg></span><span class="ph-text" data-i18n="dish_ph_soon">صورة الطبق قريباً</span></div>
       <div class="plaid"></div>
-      <div class="dish-info"><h3>طبق مميز</h3><p>بانتظار الصورة والوصف</p></div>
+      <div class="dish-info"><h3 data-i18n="dish_ph_name">طبق مميز</h3><p data-i18n="dish_ph_desc">بانتظار الصورة والوصف</p></div>
     </div>
   </div>
   <div style="text-align:center; margin-top:40px;">
-    <a class="btn btn-outline-dark" href="menu.html">تصفح القائمة كاملة</a>
+    <a class="btn btn-outline-dark" href="menu.html" data-i18n="dishes_btn">تصفح القائمة كاملة</a>
   </div>
 </section>
 
 <!-- REVIEWS — prominent & professional -->
 <section id="reviews" class="reviews-sec">
   <div class="rv-card">
-    <span class="eyebrow">دفتر الزوار</span>
-    <h2>رأيك يهمنا<span class="en">Your Feedback Matters</span></h2>
+    <span class="eyebrow" data-i18n="reviews_eyebrow">دفتر الزوار</span>
+    <h2><span data-i18n="reviews_title">رأيك يهمنا</span><span class="en" data-i18n="reviews_title_en">Your Feedback Matters</span></h2>
 
     <a class="google-mini" href="https://g.page/r/CQu_UpilLZgMEAE/review" target="_blank" rel="noopener">
       <span class="stars-mini">★★★★★</span>
-      <span class="txt"><strong>5.0</strong> تقييمنا الحالي على جوجل</span>
+      <span class="txt"><strong>5.0</strong> <span data-i18n="google_mini_text">تقييمنا الحالي على جوجل</span></span>
     </a>
 
     <div class="stars" id="rv-stars">
@@ -88,15 +89,15 @@
       <button class="star" data-val="4" aria-label="4 نجوم">★</button>
       <button class="star" data-val="5" aria-label="5 نجوم">★</button>
     </div>
-    <div class="ledger-hint">اضغط على نجمة لتقييم زيارتك</div>
+    <div class="ledger-hint" data-i18n="stars_hint">اضغط على نجمة لتقييم زيارتك</div>
 
     <div class="rv-panel hidden" id="rv-low">
-      <textarea id="rv-low-text" placeholder="احكيلنا شو ممكن نحسّن..."></textarea>
+      <textarea id="rv-low-text" placeholder="احكيلنا شو ممكن نحسّن..." data-i18n-placeholder="low_placeholder"></textarea>
       <div class="optional-contact">
-        <input type="text" id="rv-low-name" placeholder="الاسم (اختياري)" />
-        <input type="tel" id="rv-low-phone" placeholder="رقم الهاتف (اختياري)" />
+        <input type="text" id="rv-low-name" placeholder="الاسم (اختياري)" data-i18n-placeholder="name_placeholder" />
+        <input type="tel" id="rv-low-phone" placeholder="رقم الهاتف (اختياري)" data-i18n-placeholder="phone_placeholder" />
       </div>
-      <button class="btn btn-gold" id="rv-low-send" style="width:100%; margin-top:14px;">إرسال الملاحظة</button>
+      <button class="btn btn-gold" id="rv-low-send" style="width:100%; margin-top:14px;" data-i18n="send_btn">إرسال الملاحظة</button>
     </div>
 
     <div class="rv-thanks hidden" id="rv-thanks"></div>
@@ -106,23 +107,24 @@
 <!-- STORY -->
 <section id="story" class="story">
   <div class="sec-head">
-    <span class="eyebrow">قصتنا</span>
-    <h2 class="sec-title">بيت قديم... حكاية بتتجدد</h2>
+    <span class="eyebrow" data-i18n="story_eyebrow">قصتنا</span>
+    <h2 class="sec-title" data-i18n="story_title">بيت قديم... حكاية بتتجدد</h2>
   </div>
   <div style="max-width:760px; margin:0 auto; text-align:center;">
-    <p style="font-size:15px; line-height:2; color:var(--brown-soft); margin-bottom:16px;">
+    <p style="font-size:15px; line-height:2; color:var(--brown-soft); margin-bottom:16px;" data-i18n="story_p">
       رسيس بيسكن جوا مبنى تاريخي بقلب الناصرة القديمة — مكان كل حجر فيه بيحمل ذكرى، وكل زاوية
       بتحكي عن مرحلة مختلفة من عمر المدينة.
     </p>
-    <div class="note-tag">هاد النص مؤقت لحد ما توصلني تفاصيل تاريخ المبنى الحقيقية — بستبدله فوراً.</div>
+    <div class="note-tag" data-i18n="story_note">هاد النص مؤقت لحد ما توصلني تفاصيل تاريخ المبنى الحقيقية — بستبدله فوراً.</div>
   </div>
 </section>
 
 <footer>
   <img class="footer-logo" src="assets/logo.png" alt="رسيس" />
-  <p>رسيس © الناصرة — بيت قديم، حكاية بتتجدد كل يوم</p>
+  <p data-i18n="footer_tagline">رسيس © الناصرة — بيت قديم، حكاية بتتجدد كل يوم</p>
 </footer>
 
+<script src="i18n.js"></script>
 <script src="script.js"></script>
 </body>
 </html>
