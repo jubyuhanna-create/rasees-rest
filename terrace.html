@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>الجلسة الخارجية · رسيس</title>
+<title data-i18n="meta_title_terrace">الجلسة الخارجية · رسيس</title>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Markazi+Text:wght@500;600;700&family=Cairo:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Markazi+Text:wght@500;600;700&family=Cairo:wght@300;400;500;600;700;800&family=Frank+Ruhl+Libre:wght@500;600;700&family=Heebo:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -14,27 +14,28 @@
 <nav class="nav">
   <img class="nav-logo" src="assets/logo.png" alt="رسيس" />
   <ul class="nav-links">
-    <li><a href="index.html">الرئيسية</a></li>
-    <li><a href="menu.html">القائمة</a></li>
-    <li><a href="terrace.html" class="active">الجلسة الخارجية</a></li>
-    <li><a href="index.html#reviews">آراء الزوار</a></li>
-    <li><a href="contact.html">تواصل معنا</a></li>
+    <li><a href="index.html" data-i18n="nav_home">الرئيسية</a></li>
+    <li><a href="menu.html" data-i18n="nav_menu">القائمة</a></li>
+    <li><a href="terrace.html" class="active" data-i18n="nav_terrace">الجلسة الخارجية</a></li>
+    <li><a href="index.html#reviews" data-i18n="nav_reviews">آراء الزوار</a></li>
+    <li><a href="contact.html" data-i18n="nav_contact">تواصل معنا</a></li>
   </ul>
+  <button class="nav-toggle" type="button" aria-label="فتح القائمة"><span></span><span></span><span></span></button>
   <div style="display:flex; align-items:center; gap:14px;">
     <div class="lang-switch">
-      <button class="active" type="button">ع</button>
-      <button type="button">עב</button>
-      <button type="button">EN</button>
+      <button class="active" type="button" data-lang="ar">ع</button>
+      <button type="button" data-lang="he">עב</button>
+      <button type="button" data-lang="en">EN</button>
     </div>
-    <a class="nav-cta" href="https://rasis.auratech1.tech/menu-list" target="_blank" rel="noopener">القائمة</a>
+    <a class="nav-cta" href="https://rasis.auratech1.tech/menu-list" target="_blank" rel="noopener" data-i18n="nav_cta">القائمة</a>
   </div>
 </nav>
 
 <header class="photo-hero" style="background-image:url('assets/terrace-2.jpg');">
   <div class="photo-hero-inner">
-    <span class="eyebrow">الجلسة الخارجية</span>
-    <h1>تجربة تناول طعام فريدة</h1>
-    <p>جلسة خارجية مطل على الناصرة القديمة، بأجواء دافئة تناسب كل مناسبة</p>
+    <span class="eyebrow" data-i18n="nav_terrace">الجلسة الخارجية</span>
+    <h1 data-i18n="terrace_title">تجربة تناول طعام فريدة</h1>
+    <p data-i18n="terrace_sub">جلسة خارجية مطلة على الناصرة القديمة، بأجواء دافئة تناسب كل مناسبة</p>
   </div>
 </header>
 
@@ -42,37 +43,38 @@
   <div class="feature-block">
     <div class="feature-photo"><img src="assets/terrace-1.jpg" alt="إطلالة بانورامية على الناصرة" /></div>
     <div class="feature-text">
-      <h3>إطلالة بانورامية على الناصرة</h3>
-      <p>جلستنا الخارجية مصمم ليمنحكم بانوراما مفتوحة على سقوف الناصرة القديمة — جلسة هادئة تجمع بين الطعام والمنظر.</p>
+      <h3 data-i18n="feature1_title">إطلالة بانورامية على الناصرة</h3>
+      <p data-i18n="feature1_p">جلستنا الخارجية مصممة لتمنحكم بانوراما مفتوحة على سقوف الناصرة القديمة — جلسة هادئة تجمع بين الطعام والمنظر.</p>
     </div>
   </div>
   <div class="feature-block">
     <div class="feature-photo"><img src="assets/terrace-2.jpg" alt="أجواء عائلية ومناسبات خاصة" /></div>
     <div class="feature-text">
-      <h3>أجواء عائلية ومناسبات خاصة</h3>
-      <p>مساحة تتسع للعائلة والأصدقاء، ومناسبة أيضاً لاستضافة المناسبات الخاصة بأجواء مميزة.</p>
+      <h3 data-i18n="feature2_title">أجواء عائلية ومناسبات خاصة</h3>
+      <p data-i18n="feature2_p">مساحة تتسع للعائلة والأصدقاء، ومناسبة أيضاً لاستضافة المناسبات الخاصة بأجواء مميزة.</p>
     </div>
   </div>
 </section>
 
 <section class="gallery" style="padding-top:20px;">
   <div class="sec-head">
-    <span class="eyebrow">لقطات من الجلسة الخارجية</span>
-    <h2 class="sec-title">أجواء لا تُنسى</h2>
+    <span class="eyebrow" data-i18n="gallery_eyebrow">لقطات من الجلسة الخارجية</span>
+    <h2 class="sec-title" data-i18n="gallery_title">أجواء لا تُنسى</h2>
   </div>
   <div class="gallery-grid">
     <div class="gallery-slot has-img"><img src="assets/terrace-1.jpg" alt="الجلسة الخارجية - رسيس" /></div>
     <div class="gallery-slot has-img"><img src="assets/terrace-2.jpg" alt="الجلسة الخارجية - رسيس" /></div>
-    <div class="gallery-slot ph"><span class="ph-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10.5" r="1.5"/><path d="M21 15l-5-5-4 4-3-3-6 6"/></svg></span><span class="ph-text">صورة قريباً</span></div>
-    <div class="gallery-slot ph"><span class="ph-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10.5" r="1.5"/><path d="M21 15l-5-5-4 4-3-3-6 6"/></svg></span><span class="ph-text">صورة قريباً</span></div>
+    <div class="gallery-slot ph"><span class="ph-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10.5" r="1.5"/><path d="M21 15l-5-5-4 4-3-3-6 6"/></svg></span><span class="ph-text" data-i18n="photo_soon">صورة قريباً</span></div>
+    <div class="gallery-slot ph"><span class="ph-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10.5" r="1.5"/><path d="M21 15l-5-5-4 4-3-3-6 6"/></svg></span><span class="ph-text" data-i18n="photo_soon">صورة قريباً</span></div>
   </div>
 </section>
 
 <footer>
   <img class="footer-logo" src="assets/logo.png" alt="رسيس" />
-  <p>رسيس © الناصرة — بيت قديم، حكاية بتتجدد كل يوم</p>
+  <p data-i18n="footer_tagline">رسيس © الناصرة — بيت قديم، حكاية بتتجدد كل يوم</p>
 </footer>
 
+<script src="i18n.js"></script>
 <script src="script.js"></script>
 </body>
 </html>
