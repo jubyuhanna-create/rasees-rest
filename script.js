@@ -87,16 +87,29 @@ rvStars.forEach(star => {
   });
 });
 
-rvLowSend.addEventListener('click', async () => {
-  const comment = rvLowText.value.trim();
-  const name = rvLowName ? rvLowName.value.trim() : '';
-  const phone = rvLowPhone ? rvLowPhone.value.trim() : '';
-  rvLowSend.disabled = true;
-  rvLowSend.textContent = 'جارٍ الإرسال...';
-  await rvSendWebhook(rvSelected, comment, 'urgent', { name, phone });
-  rvLow.classList.add('hidden');
-  rvThanks.textContent = 'شكراً على ملاحظتك! فريقنا رح يراجعها قريباً 🙏';
-  rvThanks.classList.remove('hidden');
-  rvLowSend.disabled = false;
-  rvLowSend.textContent = 'إرسال الملاحظة';
+if (rvLowSend) {
+  rvLowSend.addEventListener('click', async () => {
+    const comment = rvLowText.value.trim();
+    const name = rvLowName ? rvLowName.value.trim() : '';
+    const phone = rvLowPhone ? rvLowPhone.value.trim() : '';
+    rvLowSend.disabled = true;
+    rvLowSend.textContent = 'جارٍ الإرسال...';
+    await rvSendWebhook(rvSelected, comment, 'urgent', { name, phone });
+    rvLow.classList.add('hidden');
+    rvThanks.textContent = 'شكراً على ملاحظتك! فريقنا رح يراجعها قريباً 🙏';
+    rvThanks.classList.remove('hidden');
+    rvLowSend.disabled = false;
+    rvLowSend.textContent = 'إرسال الملاحظة';
+  });
+}
+
+/* ══════════════════════════════════════════
+   Mobile nav toggle
+   ══════════════════════════════════════════ */
+document.querySelectorAll('.nav-toggle').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const nav = btn.closest('.nav');
+    const links = nav ? nav.querySelector('.nav-links') : null;
+    if (links) links.classList.toggle('open');
+  });
 });
