@@ -85,17 +85,31 @@ section{ padding:90px 6vw; }
   display:none; flex-direction:column; gap:5px; background:none; border:none; cursor:pointer; padding:6px;
 }
 .nav-toggle span{ width:22px; height:2px; background:var(--brown); border-radius:2px; }
+
+.nav-desktop-actions{ display:flex; align-items:center; gap:14px; }
+
 @media(max-width:860px){
+  .nav{ padding:10px 5vw; gap:10px; }
+  .nav-logo{ height:34px; }
   .nav-toggle{ display:flex; }
+  .nav-desktop-actions{ display:none; }
   .nav-links{
     display:none; position:absolute; top:100%; inset-inline:0; background:var(--paper);
-    flex-direction:column; align-items:center; gap:0; padding:8px 0; border-bottom:2px solid var(--gold);
-    box-shadow:0 12px 24px rgba(46,33,23,0.12);
+    flex-direction:column; align-items:stretch; gap:0; padding:6px 0 18px; border-bottom:2px solid var(--gold);
+    box-shadow:0 12px 24px rgba(46,33,23,0.12); max-height:calc(100vh - 60px); overflow-y:auto;
   }
   .nav-links.open{ display:flex; }
   .nav-links li{ width:100%; text-align:center; }
-  .nav-links a{ display:block; padding:14px 20px; border-bottom:1px solid var(--line); }
+  .nav-links a{ display:block; padding:15px 20px; border-bottom:1px solid var(--line); }
   .nav-links a.active, .nav-links a:hover{ border-bottom:1px solid var(--line); background:var(--cream); }
+}
+
+.nav-mobile-lang{ display:none; }
+@media(max-width:860px){
+  .nav-mobile-lang{
+    display:flex; flex-direction:column; align-items:center; gap:14px;
+    padding:18px 20px 4px; width:100%;
+  }
 }
 
 .lang-switch{ display:flex; align-items:center; gap:2px; background:var(--cream-deep); border-radius:20px; padding:3px; }
@@ -105,7 +119,6 @@ section{ padding:90px 6vw; }
 }
 .lang-switch button.active{ background:var(--paper); color:var(--brown); box-shadow:0 2px 6px rgba(46,33,23,0.12); }
 .lang-switch button:hover:not(.active){ color:var(--brown); }
-@media(max-width:600px){ .lang-switch{ display:none; } }
 
 /* ===== hero (photo hero used on home / terrace) ===== */
 .photo-hero{
@@ -257,3 +270,18 @@ footer{
 }
 .footer-logo{ height:34px; width:auto; opacity:.85; border-radius:5px; }
 footer p{ font-size:12.5px; }
+
+/* ===== mobile refinements ===== */
+@media(max-width:600px){
+  section{ padding:56px 6vw; }
+  .sec-head{ margin-bottom:36px; }
+  .photo-hero{ min-height:64vh; }
+  .photo-hero-inner{ padding:36px 0 44px; }
+  .hero-btns, .rv-panel .btn{ width:100%; }
+  .rv-card{ padding:38px 22px; }
+  .fb-card{ padding:38px 22px; }
+  .dish-grid{ gap:18px; }
+  .feature-text{ padding:26px 22px; }
+  .contact-card{ padding:28px 22px; }
+  header[style*="150px"]{ padding-top:110px !important; padding-bottom:40px !important; }
+}
