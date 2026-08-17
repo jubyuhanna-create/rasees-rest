@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title data-i18n="meta_title_menu">القائمة · رسيس</title>
+<title data-i18n="meta_title_menu">المنيو · رسيس</title>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Markazi+Text:wght@500;600;700&family=Cairo:wght@300;400;500;600;700;800&family=Frank+Ruhl+Libre:wght@500;600;700&family=Heebo:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
@@ -15,19 +15,27 @@
   <img class="nav-logo" src="assets/logo.png" alt="رسيس" />
   <ul class="nav-links">
     <li><a href="index.html" data-i18n="nav_home">الرئيسية</a></li>
-    <li><a href="menu.html" class="active" data-i18n="nav_menu">القائمة</a></li>
+    <li><a href="menu.html" class="active" data-i18n="nav_menu">المنيو</a></li>
     <li><a href="terrace.html" data-i18n="nav_terrace">الجلسة الخارجية</a></li>
     <li><a href="index.html#reviews" data-i18n="nav_reviews">آراء الزوار</a></li>
     <li><a href="contact.html" data-i18n="nav_contact">تواصل معنا</a></li>
+    <li class="nav-mobile-lang">
+      <div class="lang-switch">
+        <button class="active" type="button" data-lang="ar">ع</button>
+        <button type="button" data-lang="he">עב</button>
+        <button type="button" data-lang="en">EN</button>
+      </div>
+      <a class="nav-cta" href="https://rasis.auratech1.tech/menu-list" target="_blank" rel="noopener" data-i18n="nav_cta" style="width:100%; text-align:center;">المنيو</a>
+    </li>
   </ul>
   <button class="nav-toggle" type="button" aria-label="فتح القائمة"><span></span><span></span><span></span></button>
-  <div style="display:flex; align-items:center; gap:14px;">
+  <div class="nav-desktop-actions">
     <div class="lang-switch">
       <button class="active" type="button" data-lang="ar">ع</button>
       <button type="button" data-lang="he">עב</button>
       <button type="button" data-lang="en">EN</button>
     </div>
-    <a class="nav-cta" href="https://rasis.auratech1.tech/menu-list" target="_blank" rel="noopener" data-i18n="nav_cta">القائمة</a>
+    <a class="nav-cta" href="https://rasis.auratech1.tech/menu-list" target="_blank" rel="noopener" data-i18n="nav_cta">المنيو</a>
   </div>
 </nav>
 
@@ -62,8 +70,8 @@
   </div>
 
   <div style="text-align:center; margin-top:50px;">
-    <a class="btn btn-gold" href="https://rasis.auratech1.tech/menu-list" target="_blank" rel="noopener" data-i18n="menu_full_btn">عرض القائمة الكاملة ↗</a>
-    <p class="form-note" style="margin-top:14px;" data-i18n="menu_note">* تفتح القائمة الكاملة في نافذة جديدة، وهي متوفرة أيضاً عبر رابط خارجي</p>
+    <a class="btn btn-gold" href="https://rasis.auratech1.tech/menu-list" target="_blank" rel="noopener" data-i18n="menu_full_btn">عرض المنيو الكامل ↗</a>
+    <p class="form-note" style="margin-top:14px;" data-i18n="menu_note">* يفتح المنيو الكامل في نافذة جديدة، وهو متوفر أيضاً عبر رابط خارجي</p>
   </div>
 </section>
 
