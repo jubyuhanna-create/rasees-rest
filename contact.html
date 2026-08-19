@@ -3,29 +3,78 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title data-i18n="meta_title_contact">تواصل معنا · رسيس</title>
+
+<title data-i18n="meta_title_contact">تواصل مع مطعم رسيس في الناصرة | العنوان والهاتف والحجز</title>
+<meta name="description" content="تواصلوا مع مطعم رسيس في شارع توفيق زياد بقلب الناصرة القديمة. تجدون هنا العنوان الكامل، ساعات الدوام، رقم الهاتف، والموقع على خرائط جوجل. احجزوا طاولتكم الآن." />
+<link rel="canonical" href="https://rasees.rest/contact.html" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="رسيس" />
+<meta property="og:title" content="تواصل مع مطعم رسيس في الناصرة | العنوان والهاتف والحجز" />
+<meta property="og:description" content="العنوان الكامل، ساعات الدوام، رقم الهاتف، والموقع على خرائط جوجل لمطعم رسيس في الناصرة القديمة." />
+<meta property="og:image" content="https://rasees.rest/assets/terrace-hero.jpg" />
+<meta property="og:url" content="https://rasees.rest/contact.html" />
+<meta property="og:locale" content="ar_AR" />
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="تواصل مع مطعم رسيس في الناصرة | العنوان والهاتف والحجز" />
+<meta name="twitter:description" content="العنوان الكامل، ساعات الدوام، رقم الهاتف، والموقع على خرائط جوجل لمطعم رسيس." />
+<meta name="twitter:image" content="https://rasees.rest/assets/terrace-hero.jpg" />
+
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Markazi+Text:wght@500;600;700&family=Cairo:wght@300;400;500;600;700;800&family=Frank+Ruhl+Libre:wght@500;600;700&family=Heebo:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="style.min.css" />
+
+<!-- Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "رسيس",
+  "image": "https://rasees.rest/assets/terrace-hero.jpg",
+  "url": "https://rasees.rest/contact.html",
+  "telephone": "+972549188668",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "شارع توفيق زياد 17",
+    "addressLocality": "الناصرة",
+    "postalCode": "1600943",
+    "addressCountry": "IL"
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+    "closes": "23:00"
+  },
+  "sameAs": [
+    "https://www.instagram.com/rasees.rest/",
+    "https://www.facebook.com/people/%D8%B1%D8%B3%D9%8A%D8%B3-%D9%85%D8%B7%D8%B9%D9%85-%D9%88%D9%85%D9%82%D9%87%D9%89/61567522332146/",
+    "https://g.page/r/CQu_UpilLZgMEAE/review"
+  ]
+}
+</script>
 </head>
 <body>
 
 <nav class="nav">
-  <img class="nav-logo" src="assets/logo.png" alt="رسيس" />
+  <img class="nav-logo" src="assets/logo.png" alt="شعار مطعم رسيس - الناصرة" />
   <ul class="nav-links">
-    <li><a href="index.html" data-i18n="nav_home">الرئيسية</a></li>
-    <li><a href="menu.html" data-i18n="nav_menu">القائمة</a></li>
-    <li><a href="terrace.html" data-i18n="nav_terrace">الجلسة الخارجية</a></li>
-    <li><a href="index.html#reviews" data-i18n="nav_reviews">آراء الزوار</a></li>
-    <li><a href="contact.html" class="active" data-i18n="nav_contact">تواصل معنا</a></li>
+    <li><a href="https://rasees.rest/" data-i18n="nav_home">الرئيسية</a></li>
+    <li><a href="https://rasees.rest/menu.html" data-i18n="nav_menu">المنيو</a></li>
+    <li><a href="https://rasees.rest/terrace.html" data-i18n="nav_terrace">الجلسة الخارجية</a></li>
+    <li><a href="https://rasees.rest/#reviews" data-i18n="nav_reviews">آراء الزوار</a></li>
+    <li><a href="https://rasees.rest/contact.html" class="active" data-i18n="nav_contact">تواصل معنا</a></li>
     <li class="nav-mobile-lang">
       <div class="lang-switch">
         <button class="active" type="button" data-lang="ar">ع</button>
         <button type="button" data-lang="he">עב</button>
         <button type="button" data-lang="en">EN</button>
       </div>
-      <a class="nav-cta" href="https://rasis.auratech1.tech/menu-list" target="_blank" rel="noopener" data-i18n="nav_cta" style="width:100%; text-align:center;">القائمة</a>
+      <a class="nav-cta" href="https://rasis.auratech1.tech/menu-list" target="_blank" rel="noopener" data-i18n="nav_cta" style="width:100%; text-align:center;">المنيو</a>
     </li>
   </ul>
   <button class="nav-toggle" type="button" aria-label="فتح القائمة"><span></span><span></span><span></span></button>
@@ -35,7 +84,7 @@
       <button type="button" data-lang="he">עב</button>
       <button type="button" data-lang="en">EN</button>
     </div>
-    <a class="nav-cta" href="https://rasis.auratech1.tech/menu-list" target="_blank" rel="noopener" data-i18n="nav_cta">القائمة</a>
+    <a class="nav-cta" href="https://rasis.auratech1.tech/menu-list" target="_blank" rel="noopener" data-i18n="nav_cta">المنيو</a>
   </div>
 </nav>
 
@@ -48,13 +97,13 @@
   <div class="contact-grid">
     <div class="map-wrap">
       <iframe
-        title="موقع رسيس على الخريطة"
+        title="موقع مطعم رسيس على خريطة جوجل - الناصرة"
         src="https://www.google.com/maps?q=Tawfiq+Ziad+St+17+Nazareth&output=embed"
         loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 
     <div class="contact-card">
-      <h3 data-i18n="contact_info_title">معلومات الاتصال</h3>
+      <h2 data-i18n="contact_info_title">معلومات الاتصال</h2>
       <ul class="contact-list">
         <li>
           <span class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s7-6.5 7-12a7 7 0 10-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg></span>
@@ -79,16 +128,16 @@
       <p class="form-note" data-i18n="form_note">* هاد الفورم بيفتح تطبيق الإيميل عندك مباشرة. لو بدك ربطه بنظام إرسال تلقائي، ممكن نضيفه لاحقاً.</p>
 
       <div class="social-row">
-        <a class="social-circle" href="https://www.instagram.com/rasees.rest/" target="_blank" rel="noopener" aria-label="إنستقرام">
+        <a class="social-circle" href="https://www.instagram.com/rasees.rest/" target="_blank" rel="noopener" aria-label="إنستقرام مطعم رسيس">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="1"/></svg>
         </a>
-        <a class="social-circle" href="https://www.facebook.com/people/%D8%B1%D8%B3%D9%8A%D8%B3-%D9%85%D8%B7%D8%B9%D9%85-%D9%88%D9%85%D9%82%D9%87%D9%89/61567522332146/" target="_blank" rel="noopener" aria-label="فيسبوك">
+        <a class="social-circle" href="https://www.facebook.com/people/%D8%B1%D8%B3%D9%8A%D8%B3-%D9%85%D8%B7%D8%B9%D9%85-%D9%88%D9%85%D9%82%D9%87%D9%89/61567522332146/" target="_blank" rel="noopener" aria-label="فيسبوك مطعم رسيس">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M15 8.5h2.5V5H15c-1.9 0-3.5 1.6-3.5 3.5V11H9v3.5h2.5V21H15v-6.5h2.5l.5-3.5h-3V8.5c0-.6.4-1 1-1z"/></svg>
         </a>
-        <a class="social-circle" href="https://g.page/r/CQu_UpilLZgMEAE/review" target="_blank" rel="noopener" aria-label="تقييمات جوجل">
+        <a class="social-circle" href="https://g.page/r/CQu_UpilLZgMEAE/review" target="_blank" rel="noopener" aria-label="تقييمات مطعم رسيس على جوجل">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2l2.6 5.9L21 8.6l-4.5 4.2L17.6 19 12 15.9 6.4 19l1.1-6.2L3 8.6l6.4-.7z"/></svg>
         </a>
-        <a class="social-circle" href="https://wa.me/972549188668" target="_blank" rel="noopener" aria-label="واتساب">
+        <a class="social-circle" href="https://wa.me/972549188668" target="_blank" rel="noopener" aria-label="تواصل مع رسيس عبر واتساب">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 11.5a8.5 8.5 0 01-12.4 7.5L4 20l1.1-4.4A8.5 8.5 0 1121 11.5z"/></svg>
         </a>
       </div>
@@ -97,11 +146,11 @@
 </section>
 
 <footer>
-  <img class="footer-logo" src="assets/logo.png" alt="رسيس" />
+  <img class="footer-logo" src="assets/logo.png" alt="شعار مطعم رسيس" loading="lazy" />
   <p data-i18n="footer_tagline">رسيس © الناصرة — بيت قديم، حكاية بتتجدد كل يوم</p>
 </footer>
 
-<script src="i18n.js"></script>
-<script src="script.js"></script>
+<script src="i18n.min.js"></script>
+<script src="script.min.js"></script>
 </body>
 </html>
