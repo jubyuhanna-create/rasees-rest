@@ -3,22 +3,63 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title data-i18n="meta_title_menu">المنيو · رسيس</title>
+
+<title data-i18n="meta_title_menu">منيو مطعم رسيس في الناصرة القديمة | أطباق أصيلة ومميزة</title>
+<meta name="description" content="استكشفوا منيو مطعم رسيس في الناصرة القديمة: منسف أصيل، أطباق إيطالية وطابون وسلطات ومقبلات شهية. قائمة طعام غنية بلمسة عصرية تناسب كل الأذواق والمناسبات." />
+<link rel="canonical" href="https://rasees.rest/menu.html" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="رسيس" />
+<meta property="og:title" content="منيو مطعم رسيس في الناصرة القديمة | أطباق أصيلة ومميزة" />
+<meta property="og:description" content="استكشفوا منيو مطعم رسيس في الناصرة القديمة: منسف أصيل، أطباق إيطالية وطابون وسلطات ومقبلات شهية." />
+<meta property="og:image" content="https://rasees.rest/assets/dish-mansaf.jpg" />
+<meta property="og:url" content="https://rasees.rest/menu.html" />
+<meta property="og:locale" content="ar_AR" />
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="منيو مطعم رسيس في الناصرة القديمة | أطباق أصيلة ومميزة" />
+<meta name="twitter:description" content="استكشفوا منيو مطعم رسيس: منسف أصيل، أطباق إيطالية وطابون وسلطات ومقبلات شهية." />
+<meta name="twitter:image" content="https://rasees.rest/assets/dish-mansaf.jpg" />
+
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Markazi+Text:wght@500;600;700&family=Cairo:wght@300;400;500;600;700;800&family=Frank+Ruhl+Libre:wght@500;600;700&family=Heebo:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="style.min.css" />
+
+<!-- Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "رسيس",
+  "image": "https://rasees.rest/assets/terrace-hero.jpg",
+  "url": "https://rasees.rest/menu.html",
+  "telephone": "+972549188668",
+  "servesCuisine": ["Middle Eastern", "Mediterranean", "Levantine"],
+  "priceRange": "$$",
+  "hasMenu": "https://rasis.auratech1.tech/menu-list",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "شارع توفيق زياد 17",
+    "addressLocality": "الناصرة",
+    "postalCode": "1600943",
+    "addressCountry": "IL"
+  }
+}
+</script>
 </head>
 <body>
 
 <nav class="nav">
-  <img class="nav-logo" src="assets/logo.png" alt="رسيس" />
+  <img class="nav-logo" src="assets/logo.png" alt="شعار مطعم رسيس - الناصرة" />
   <ul class="nav-links">
-    <li><a href="index.html" data-i18n="nav_home">الرئيسية</a></li>
-    <li><a href="menu.html" class="active" data-i18n="nav_menu">المنيو</a></li>
-    <li><a href="terrace.html" data-i18n="nav_terrace">الجلسة الخارجية</a></li>
-    <li><a href="index.html#reviews" data-i18n="nav_reviews">آراء الزوار</a></li>
-    <li><a href="contact.html" data-i18n="nav_contact">تواصل معنا</a></li>
+    <li><a href="https://rasees.rest/" data-i18n="nav_home">الرئيسية</a></li>
+    <li><a href="https://rasees.rest/menu.html" class="active" data-i18n="nav_menu">المنيو</a></li>
+    <li><a href="https://rasees.rest/terrace.html" data-i18n="nav_terrace">الجلسة الخارجية</a></li>
+    <li><a href="https://rasees.rest/#reviews" data-i18n="nav_reviews">آراء الزوار</a></li>
+    <li><a href="https://rasees.rest/contact.html" data-i18n="nav_contact">تواصل معنا</a></li>
     <li class="nav-mobile-lang">
       <div class="lang-switch">
         <button class="active" type="button" data-lang="ar">ع</button>
@@ -48,7 +89,12 @@
 <section class="dishes" style="padding-top:70px;">
   <div class="dish-grid">
     <div class="dish-card">
-      <div class="dish-photo"><img src="assets/dish-mansaf.jpg" alt="طبق المنسف الأصيل" /></div>
+      <div class="dish-photo">
+        <picture>
+          <source srcset="assets/dish-mansaf.webp" type="image/webp" />
+          <img src="assets/dish-mansaf.jpg" alt="طبق المنسف الأصيل في مطعم رسيس بالناصرة" loading="lazy" width="963" height="628" />
+        </picture>
+      </div>
       <div class="plaid"></div>
       <div class="dish-info"><h3 data-i18n="dish1_name">طبق المنسف الأصيل</h3><p data-i18n="dish1_desc">لحم طري على أرز باللبن ومكسرات محمصة</p></div>
     </div>
@@ -76,11 +122,11 @@
 </section>
 
 <footer>
-  <img class="footer-logo" src="assets/logo.png" alt="رسيس" />
+  <img class="footer-logo" src="assets/logo.png" alt="شعار مطعم رسيس" loading="lazy" />
   <p data-i18n="footer_tagline">رسيس © الناصرة — بيت قديم، حكاية بتتجدد كل يوم</p>
 </footer>
 
-<script src="i18n.js"></script>
-<script src="script.js"></script>
+<script src="i18n.min.js"></script>
+<script src="script.min.js"></script>
 </body>
 </html>
